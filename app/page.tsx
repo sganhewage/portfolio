@@ -187,7 +187,7 @@ export default function PortfolioLanding() {
             {/* Right Side */}
             <div className="flex justify-center border-blue-400 rounded-full border-8">
               <img
-                src="/headshot.jpg"
+                src="headshot.jpg"
                 alt="Sandith Ganhewage"
                 className="w-80 h-80 rounded-full object-cover shadow-lg"
               />
@@ -332,7 +332,7 @@ export default function PortfolioLanding() {
             <div className="flex flex-col items-center justify-center text-center flex-1">
               <h2 className="text-5xl font-bold mb-8">Resume</h2>
               <a
-                href="/SandithGanhewage_Resume.pdf"
+                href="SandithGanhewage_Resume.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-block rounded-md border border-blue-400 px-5 py-2.5 text-xl font-bold text-blue-400 hover:bg-blue-400 hover:text-white"
@@ -345,7 +345,7 @@ export default function PortfolioLanding() {
             <div className="flex-1 w-full max-w-3xl">
               <div className="w-full h-[80vh] border rounded-md shadow-md overflow-hidden">
                 <iframe
-                  src="/SandithGanhewage_Resume.pdf"
+                  src="SandithGanhewage_Resume.pdf"
                   className="w-full h-full"
                   title="Sandith Ganhewage Resume Preview"
                 />
