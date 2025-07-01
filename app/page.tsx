@@ -1,14 +1,7 @@
 'use client';
 
-import { useState, useEffect, useRef } from 'react';
+import { useEffect, useRef } from 'react';
 import { FaGithub, FaLinkedin, FaEnvelope } from 'react-icons/fa';
-
-const navigation = [
-  { name: 'About', href: '#about' },
-  { name: 'Projects', href: '#projects' },
-  { name: 'Skills', href: '#skills' },
-  { name: 'Contact', href: '#contact' },
-];
 
 export default function PortfolioLanding() {
   const canvasRef = useRef<HTMLCanvasElement | null>(null);
@@ -20,7 +13,7 @@ export default function PortfolioLanding() {
     if (!ctx) return;
 
     let animationFrameId: number;
-    let mouse = { x: window.innerWidth / 2, y: window.innerHeight / 2 };
+    const mouse = { x: window.innerWidth / 2, y: window.innerHeight / 2 };
 
     canvas.width = window.innerWidth;
     canvas.height = window.innerHeight;

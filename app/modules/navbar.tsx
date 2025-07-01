@@ -1,5 +1,3 @@
-import { Bars3Icon } from '@heroicons/react/24/outline';
-
 const navigation = [
   { name: 'About', href: '#about' },
   { name: 'Projects', href: '#projects' },
