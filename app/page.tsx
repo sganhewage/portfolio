@@ -1,7 +1,8 @@
 'use client';
 
 import { useState, useEffect, useRef } from 'react';
-import { FaGithub, FaLinkedin, FaEnvelope } from 'react-icons/fa';
+import { FaGithub, FaLinkedin, FaEnvelope, FaReact, FaNodeJs, FaPython, FaDocker } from 'react-icons/fa';
+import { SiTailwindcss, SiMongodb, SiVercel, SiFastapi, SiReact, SiReactrouter, SiClerk, SiGoogle, SiApple, SiDebian, SiJavascript } from 'react-icons/si';
 import { motion, useAnimation } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import { FiExternalLink } from 'react-icons/fi';
@@ -210,6 +211,26 @@ export default function PortfolioLanding() {
               {/* Experience 1 */}
               <div className="flex flex-col lg:flex-row gap-8 bg-gray-800/50 p-6 rounded-xl shadow-md items-center hover:scale-105 transition-transform duration-300">
                 <div className="text-center lg:text-left">
+                  <h2 className="text-2xl font-bold">narb</h2>
+                  <h3 className="text-xl font-semibold italic mt-2">Software Engineering Intern</h3>
+                  <p className="mt-2 text-gray-300">- Designed user application for multi-modal LLM technology, utilizing Convex and Clerk for a 30% increase in development speed</p>
+                  <p className="mt-2 text-gray-300">- Developed in React and React Native to develop and deploy a cross-platform front end solution, increasing overall usability</p>
+                  <p className="mt-2 text-gray-300">- Migrated existing applications to a new cross-platform framework prioritizing rapid development and simple implementation</p>
+                </div>
+                <div className="rounded-lg shadow-md h-full bg-white p-4">
+                  <a href="https://narb.cc/" target="_blank" rel="noopener noreferrer" className="block">
+                    <img
+                        src="narb-logo.png"
+                        alt="narb Logo"
+                        className="h-25 object-contain hover:opacity-80 transition-opacity"
+                      />
+                  </a>
+                </div>
+              </div>
+
+              {/* Experience 2 */}
+              <div className="flex flex-col lg:flex-row gap-8 bg-gray-800/50 p-6 rounded-xl shadow-md items-center hover:scale-105 transition-transform duration-300">
+                <div className="text-center lg:text-left">
                   <h2 className="text-2xl font-bold">Qorvo Inc.</h2>
                   <h3 className="text-xl font-semibold italic mt-2">Embedded Systems Engineering Intern</h3>
                   <p className="mt-2 text-gray-300">- Designed efficient embedded systems workflow for chip sorting in a test engineering lab</p>
@@ -218,15 +239,17 @@ export default function PortfolioLanding() {
 
                 </div>
                 <div className=" p-4 bg-amber-50 rounded-lg shadow-md h-full">
-                  <img
-                    src="qorvo-logo.png"
-                    alt="Qorvo Logo"
-                    className="h-25 object-contain"
-                  />
+                  <a href="https://www.qorvo.com" target="_blank" rel="noopener noreferrer" className="block">
+                    <img
+                      src="qorvo-logo.png"
+                      alt="Qorvo Logo"
+                      className="h-25 object-contain hover:opacity-80 transition-opacity"
+                    />
+                  </a>
                 </div>
               </div>
 
-              {/* Experience 2 */}
+              {/* Experience 3 */}
               <div className="flex flex-col lg:flex-row gap-8 bg-gray-800/50 p-6 rounded-xl shadow-md items-center hover:scale-105 transition-transform duration-300">
                 <div className="text-center lg:text-left">
                   <h2 className="text-2xl font-bold">Duke CEI Lab</h2>
@@ -235,11 +258,13 @@ export default function PortfolioLanding() {
                   <p className="mt-2 text-gray-300">- Researched genome-sequencing-focused applications for increased efficiency using CAMs (content addressable memory).</p>
                 </div>
                 <div className="rounded-lg shadow-md h-full">
-                  <img
-                    src="duke-cei-logo.svg"
-                    alt="Duke CEI Logo"
-                    className="h-25 object-contain"
-                  />
+                  <a href="https://cei.pratt.duke.edu" target="_blank" rel="noopener noreferrer" className="block">
+                    <img
+                      src="duke-cei-logo.svg"
+                      alt="Duke CEI Logo"
+                      className="h-25 object-contain hover:opacity-80 transition-opacity"
+                    />
+                  </a>
                 </div>
               </div>
             </div>
@@ -273,13 +298,54 @@ export default function PortfolioLanding() {
                     <li>Hosted via Vercel with secure client-server boundaries</li>
                   </ul>
                 </div>
-                <div className="flex gap-4 mt-6 text-blue-400">
-                  <a href="https://smart-study-lovat.vercel.app/login" target="_blank" title="SmartStudy Live App">
-                    <FiExternalLink className="h-6 w-6 hover:text-blue-300" />
-                  </a>
-                  <a href="https://github.com/sganhewage/SmartStudy" target="_blank" title="GitHub Repo">
-                    <FaGithub className="h-6 w-6 hover:text-blue-300" />
-                  </a>
+                <div className="mt-6">
+                  <div className="flex gap-3 mb-4">
+                    <FaReact className="h-6 w-6 text-blue-500" title="React" />
+                    <FaNodeJs className="h-6 w-6 text-green-600" title="Node.js" />
+                    <FaPython className="h-6 w-6 text-blue-600" title="Python" />
+                    <SiFastapi className="h-6 w-6 text-green-500" title="FastAPI" />
+                    <SiTailwindcss className="h-6 w-6 text-cyan-500" title="Tailwind CSS" />
+                    <SiMongodb className="h-6 w-6 text-green-500" title="MongoDB" />
+                    <SiVercel className="h-6 w-6 text-white" title="Vercel" />
+                  </div>
+                  <div className="flex gap-4 text-blue-400">
+                    <a href="https://smart-study-lovat.vercel.app/login" target="_blank" title="SmartStudy Live App">
+                      <FiExternalLink className="h-6 w-6 hover:text-blue-300" />
+                    </a>
+                    <a href="https://github.com/sganhewage/SmartStudy" target="_blank" title="GitHub Repo">
+                      <FaGithub className="h-6 w-6 hover:text-blue-300" />
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              {/* MeetUp */}
+              <div className="bg-gray-800/60 rounded-xl p-6 shadow-lg flex flex-col justify-between min-h-[400px] hover:scale-105 transition-transform duration-300">
+                <div>
+                  <h3 className="text-xl font-bold mb-3">MeetUp</h3>
+                  <p className="text-gray-300 mb-4">
+                    A cross-platform scheduling application that directly integrates with calendar accounts to simplify group scheduling and meeting coordination.
+                  </p>
+                  <ul className="text-sm text-gray-400 list-disc pl-4 space-y-1">
+                    <li>Built with React, React Native, Tailwind CSS, Convex, Clerk</li>
+                    <li>Direct integration with Google/Outlook Calendar API</li>
+                    <li>Group functionality with unified profiles for dynamic scheduling</li>
+                    <li>Secure authentication with Google and Apple using Clerk</li>
+                    <li>Configurable privacy features for data sharing control</li>
+                  </ul>
+                </div>
+                <div className="mt-6">
+                  <div className="flex gap-3 mb-4">
+                    <FaReact className="h-6 w-6 text-blue-500" title="React" />
+                    <SiTailwindcss className="h-6 w-6 text-cyan-500" title="Tailwind CSS" />
+                    <SiClerk className="h-6 w-6 text-purple-500" title="Clerk" />
+                    <img src="convex-logo.png" alt="Convex" className="h-6 w-6 object-contain" title="Convex" />
+                  </div>
+                  <div className="flex gap-4 text-blue-400">
+                    <a href="https://github.com/sganhewage/meetup" target="_blank" title="GitHub Repo">
+                      <FaGithub className="h-6 w-6 hover:text-blue-300" />
+                    </a>
+                  </div>
                 </div>
               </div>
 
@@ -297,6 +363,13 @@ export default function PortfolioLanding() {
                     <li>Runs media storage, dev environments, and secure exit node</li>
                   </ul>
                 </div>
+                <div className="mt-6">
+                  <div className="flex gap-3 mb-4">
+                    <SiDebian className="h-6 w-6 text-red-600" title="Debian" />
+                    <FaDocker className="h-6 w-6 text-blue-500" title="Docker" />
+                    <img src="tailscale-logo.png" alt="Tailscale" className="h-6 w-6 object-contain" title="Tailscale" />
+                  </div>
+                </div>
               </div>
 
               {/* NFL Stats Analyzer */}
@@ -307,16 +380,23 @@ export default function PortfolioLanding() {
                     A desktop GUI app for scraping and visualizing decades of NFL player data. Includes interactive charts, caching, and search — all in a lightweight JavaFX application.
                   </p>
                   <ul className="text-sm text-gray-400 list-disc pl-4 space-y-1">
-                    <li>Built with Java, JavaFX, SceneBuilder, JSoup</li>
+                    <li>Built with Java, JavaFX, SceneBuilder, JSoup, Maven</li>
                     <li>Scrapes and structures 20+ years of player stats</li>
                     <li>Integrated local caching for 30% performance boost</li>
                     <li>Modular UI built with SceneBuilder</li>
                   </ul>
                 </div>
-                <div className="flex gap-4 mt-6 text-blue-400">
-                  <a href="https://github.com/sganhewage/NFL-Stats" target="_blank" title="GitHub Repo">
-                    <FaGithub className="h-6 w-6 hover:text-blue-300" />
-                  </a>
+                <div className="mt-6">
+                  <div className="flex gap-3 mb-4">
+                    <img src="java-logo.png" alt="Java" className="h-6 w-6 object-contain" title="Java" />
+                    <img src="scenebuilder-logo.png" alt="SceneBuilder" className="h-6 w-6 object-contain" title="SceneBuilder" />
+                    <img src="maven-logo.svg" alt="Maven" className="h-6 object-contain" title="Maven" />
+                  </div>
+                  <div className="flex gap-4 text-blue-400">
+                    <a href="https://github.com/sganhewage/NFL-Stats" target="_blank" title="GitHub Repo">
+                      <FaGithub className="h-6 w-6 hover:text-blue-300" />
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>
